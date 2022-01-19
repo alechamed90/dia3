@@ -1,0 +1,20 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-server
+    
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/alechamed90/yml.git
+          default-label: main
+#          search-paths:
+#           - '*service*'
+#           
+#Esto para indicar donde se encuentra el servidor de eureka
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
